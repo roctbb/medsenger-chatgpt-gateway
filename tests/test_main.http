@@ -1,0 +1,31 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/ask_chgpt
+Content-Type: application/json
+
+{
+  "context": "Я хочу узнать, как работает нейронная сеть.",
+  "model": "gpt-3.5-turbo",
+  "token": "YOUR_API_TOKEN"
+}
+
+###
+
+POST http://127.0.0.1:8000/ask_chgpt
+Content-Type: application/json
+
+{
+  "context": [
+    {
+      "role": "user",
+      "content": "Я хочу узнать, как работает нейронная сеть."
+    }
+  ],
+  "model": "gpt-4o",
+  "token": "n7L5UISdHaUCFCFfiKaozOf94aLSjJb4twI2NMfwbE5ow5Aet1"
+}

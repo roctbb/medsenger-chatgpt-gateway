@@ -6,7 +6,7 @@ from colorama import Fore, Back, Style
 
 
 def generate_password(length):
-    characters = string.ascii_letters + string.digits + string.punctuation
+    characters = string.ascii_letters + string.digits
     password = ''.join(choice(characters) for i in range(length))
     return password
 

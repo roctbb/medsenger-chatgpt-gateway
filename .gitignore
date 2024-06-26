@@ -2,3 +2,5 @@
 .idea
 __pychale__
 keys.json
+config.py
+chatgptapi.service
