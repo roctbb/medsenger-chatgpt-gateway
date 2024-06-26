@@ -5,13 +5,18 @@ Accept: application/json
 
 ###
 
-POST http://127.0.0.1:8000/ask_chatgpt
+POST https://gpt-gateway.ai.medsenger.ru/ask_chatgpt
 Content-Type: application/json
 
 {
-  "context": "Я хочу узнать, как работает нейронная сеть.",
+  "context": [
+    {
+      "role": "user",
+      "content": "Я хочу узнать, как работает нейронная сеть."
+    }
+  ],
   "model": "gpt-3.5-turbo",
-  "token": "YOUR_API_TOKEN"
+  "token": "UmocnztYEex9STelsKeVlKhJFxldapPaLF8vmQdbicJT4yTrbZ"
 }
 
 ###
