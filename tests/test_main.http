@@ -5,7 +5,7 @@ Accept: application/json
 
 ###
 
-POST http://127.0.0.1:8000/ask_chgpt
+POST http://127.0.0.1:8000/ask_chatgpt
 Content-Type: application/json
 
 {
@@ -16,7 +16,7 @@ Content-Type: application/json
 
 ###
 
-POST http://127.0.0.1:8000/ask_chgpt
+POST http://127.0.0.1:8000/ask_chatgpt
 Content-Type: application/json
 
 {

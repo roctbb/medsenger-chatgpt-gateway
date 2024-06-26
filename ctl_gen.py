@@ -10,10 +10,10 @@ venv_path = "venv"
 python_path = os.path.join(venv_path, "bin", "python")
 
 # Путь к скрипту
-script_path = "main.py"
+script_path = "main"
 
 # Команда для запуска скрипта
-command = f"uvicorn {script_path}:app --host 0.0.0.0 --port 879"
+command = f"uvicorn {script_path}:app --host 0.0.0.0 --port 8790"
 
 # Создание systemd сервиса
 with open(f"/etc/systemd/system/{service_name}.service", "w") as f:
