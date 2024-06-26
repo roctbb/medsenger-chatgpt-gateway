@@ -12,7 +12,7 @@ async def test_work():
     return {"state": "Waiting for the thunder"}
 
 
-@app.post("/ask_chatgpt")
+@app.post("/ask")
 async def ask_chatgpt(
     context: list[dict] = Body(embed=True),
     model: str = Body(embed=True),
