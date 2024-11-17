@@ -23,6 +23,10 @@ async def ask_chatgpt(
     
     if token not in keys.values():
         return {"error": "token not found"}
-
-    completion = await client.chat.completions.create(model=model, messages=context)
-    return {"result": completion}
+    try:
+        completion = await client.chat.completions.create(model=model, messages=context)
+        return {"result": completion}
+    except Exception as e:
+        print(e)
+        return {"error": str(e)}
+        
